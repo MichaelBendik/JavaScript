@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #cbc5db;
+}
+
+#main{
+    background-color: #d5dbc5;
+    width:95%;
+    margin:20px auto;
+}
+#header{
+    text-align: center;
+    padding: 10px;
+}
+
+#img-div{
+    background-color: #ddbf80;
+    text-align: center;
+    width:90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+#img{
+    max-width: 100%;
+    height: auto;
+}
+
+#tribute-info{
+    width:70%;
+    margin: 0 auto;
+}
+
+#tribute-info h3{
+    text-align: center;
+    padding: 5px;
+    
+}
+.list-item{
+    margin-top: 15px;
+}
+
+#quote{
+    font-style: italic;
+    padding: 30px;
+}
+#footer{
+   font-weight: bold;
+   padding: 10px;
+}
