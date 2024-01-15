@@ -2,8 +2,19 @@
     padding: 0;
     margin: 0;
 }
+
 body{
     background-color: #cbc5db;
+
+}
+
+#userout{
+  
+  width:100%;
+  height: 100%;
+  background-color: #9abd3b;
+  justify-content: center;
+  align-items: center;
 }
 
 #main{
@@ -11,9 +22,14 @@ body{
     width:95%;
     margin:20px auto;
 }
-#header{
+
+#title{
     text-align: center;
     padding: 10px;
+}
+
+#title h1{
+    font-size: 35px;
 }
 
 #img-div{
@@ -23,9 +39,16 @@ body{
     margin: 0 auto;
     padding: 10px;
 }
-#img{
+
+#image{
     max-width: 100%;
     height: auto;
+    display:block;
+    margin: 0 auto;
+}
+
+#img-caption{
+    padding-top: 10px;
 }
 
 #tribute-info{
@@ -36,7 +59,24 @@ body{
 #tribute-info h3{
     text-align: center;
     padding: 5px;
+    font-size: 30px;
     
+}
+#footer{
+  display: flex;
+  justify-content: center;
+}
+#happy{
+
+}
+#info{
+  
+}
+/* classes */
+
+.container{
+    display: flex;
+    flex-direction: column;
 }
 .list-item{
     margin-top: 15px;
@@ -46,7 +86,102 @@ body{
     font-style: italic;
     padding: 30px;
 }
+
 #footer{
    font-weight: bold;
+   font-size:20px;
    padding: 10px;
+   text-align: center;
 }
+/* викторина */
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+  }
+  
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+  
+  body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+  }
+  
+  body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    cursor:pointer;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  .flex{
+    display: flex;
+  }
+  .quiz{
+    margin-top: 10vh;
+  }

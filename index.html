@@ -6,38 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tribute Page</title>
     <link rel="stylesheet" href="CSS/style.css">
+    
+    <script src="app.js" defer></script>
+    <script src="app2.js" defer></script>
+    <script src="app3.js" defer></script>
+
+
 </head>
 <body>
     <div id="main">
-        <div id="header">
-            <h1 id='title'>Linus Benedict Torvalds</h1>
-            <p>Named by Time magazine as the 'one of the most influential people in the world'</p>
+        <div id="title">
+            <h1>Что такое Javascript?</h1>
+            
         </div>
         <div id="img-div">
-            <img id='img' src="IMG/Linus Torvalds.png" alt="Linus Torvalds">
-            <p>is a Finnish-American software engineer who is the creator and, historically, the main developer of the Linux kernel, used by Linux distributions and other operating systems such as Android. </p>
+            <img id='image' src="https://avatars.dzeninfra.ru/get-zen_doc/9703143/pub_64745e6792919f0ad18cb2c1_6479fd44866e844683543977/scale_1200" alt="Linus Torvalds">
+            <div id='img-caption'>JavaScript — это язык программирования, который в первую очередь применяют в вебе. С его помощью сайты делают интерактивными: добавляют всплывающие окна, анимацию, кнопки лайков и формы для отправки информации. </div>
         </div>
-        <div id="tribute-info">
-            <h3>Here're highlights of Linus Torvalds's life</h3>
-            <ul id='description'>
-                <li class='list-item'>1969 - born in Helsinki, Finland.</li>
-                <li class='list-item'>1988-1996 - he studied at the University of Helsinki, from where he obtained a master's degree in computer science. He belonged to the NODES research group.</li>
-                <li class='list-item'>1991 - he purchased the Intel 80386-based IBM PC and obtained a MINIX operating system. With this, he began to work and research on the Linux operating system.</li>
-                <li class='list-item'>1996 - he went on a visit to the technology firm, 'Transmeta', where he began to work from the following year. He later worked for the Open Source Development Labs.</li>
-                <li class='list-item'>1997-1999 - he worked on the '86open' project, which is a binary file format for the 'Unix' and Unix-like operating systems. They were to be used on a common x86 PC.</li>
-                <li class='list-item'>2004 - along with his family, he relocated to Beaverton, Oregon, where Open Source Development Labs was headquartered. The following year, he developed the software, 'Git'.</li>
-                <li class='list-item'>2006 - about two percent of the Linux kernel was written by him, which was a significant contribution.</li>
-                <li class='list-item'>2010 - he became a citizen of the United States of America.</li>
-                <p id='quote'>“Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.”
-
-                    <br>-- Linus Torvalds.</p>
+        <div id="tribute-info" class="container">
+            <div class="item">
+            <h3>Для чего нужен Javascript:</h3>
+            <ul class='description'>
+                <li class='list-item'>Сделать сайт интерактивным — чтобы это была не просто статичная страница, а динамичная программа, реагирующая на действие пользователей. Например, если нажать кнопку «Нравится» и число лайков на записи увеличивается сразу, без обновления страницы. Это результат использования JavaScript.</li>
+                <li class='list-item'>Анимировать объекты — добавить скролл до раздела по нажатию кнопки, анимацию фона, движущиеся объекты.</li>
+                <li class='list-item'>Передавать информацию между пользователем и сервером. Именно скрипты, написанные на JavaScript, отправляют на сервер информацию, которую ввёл пользователь. </li>
+                <li class='list-item'>Писать серверную часть сайта или приложения.</li>
+                <li class='list-item'>Производить вычисления. Например, в онлайн-калькуляторе на сайте. Это можно делать как на стороне сервера, так и в самом браузере с помощью возможностей JavaScript.</li>
+            </ul>
+            </div>
+            <div class="item">
+            <h3>Что не сможет Javascript:</h3>
+            <ul class='description'>
+                <li class='list-item'>Читать и записывать файлы на жёсткий диск пользователя, запускать программы, работать с системными функциями ОС. Ему доступно только то, что пользователь сам добровольно согласился загрузить через браузер. В некоторых браузерах, например Mozilla Firefox, функция чтения и записи уже появилась, но пока доступна не везде.</li>
+                <li class='list-item'>Работать с камерой и микрофоном без разрешения пользователя.</li>
+                <li class='list-item'>Взаимодействовать с другими окнами и вкладками. Для этого обе страницы должны «согласиться» с этим и иметь специальный код для обмена данными. Это защищает пользователя и не помогает неизвестному сайту взаимодействовать со вкладкой, где открыты, например, соцсети или почта. </li>
+                <li class='list-item'>Легко получать данные от других сайтов и доменов. Это возможно с согласия другого сайта или сервера.</li>
+                <li class='list-item'>Производить вычисления. Например, в онлайн-калькуляторе на сайте. Это можно делать как на стороне сервера, так и в самом браузере с помощью возможностей JavaScript.</li>
+                
 
             </ul>
+            </div>
+            <div class="item">
+                <details id="details">
+                    <summary>Практическая работа 1
+
+                    </summary>
+                    <div id="out1"></div>
+                    <h5>Первый цикл</h5>
+                    <div id="loop1" class="out">
+                        
+                    </div>
+                    <h5>Второй цикл</h5>
+                    <div id="loop2" class="out"></div>
+                    <h5>Третий цикл</h5>
+                    <div id="loop3" class="out"></div>
+                    <h5>Четные числа</h5>
+                    <div id="out2" class="out"></div>
+                    <h5>Нечетные числа</h5>
+                    <div id="out3" class="out"></div>
+                   </details>
+            </div>
+            <div class="item">
+                <details id="details">
+                    <summary>Практическая работа 2
+                    </summary> 
+        
+                            <h5>5й элемент массива:</h5>
+                            <div id="item1" class="item"></div>
+                            <h5>Измененный 5й элемент массива:</h5>
+                            <div id="item2" class="item"></div>
+                            <h5>Новый массив</h5>
+                            <div id="item3" class="item"></div>
+                            <h5>Первый массив:</h5>
+                            <div id="first" class="item"></div>
+                            <h5>Второй массив:</h5>
+                            <div id="second" class="item"></div>
+                            <h5>Объединенный массив:</h5>
+                            <div id="total" class="item"></div>
+                            <h5>Последний элемент массива:</h5>
+                            <div id="last" class="item"></div>
+                            <h5>Последний элемент измененного массива:</h5>
+                            <div id="nextLast" class="item"></div>
+                            <h5>Добавление нового элемента в начало:</h5>
+                            <div id="add" class="item"></div>
+                            <h5>Стандартный вывод даты :</h5>
+                            <div id="date" class="item"></div>
+                            <h5> Форматированный вывод даты :</h5>
+                            <div id="formattedDate" class="item"></div>
+                            <h5> Произведение 2х случайных чисел до 50 :</h5>
+                            <div id="multiply" class="item"></div>
+                        
+                    
+                </details>
+            </div>
+            <div class="item quiz">
+                <h3>Викторина !!!</h3>
+                <div id="question-container" class="hide">
+                  <div id="question">Question</div>
+                  <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                  </div>
+                </div>
+                <div class="controls">
+                  <button id="start-btn" class="start-btn btn">Start</button>
+                  <button id="next-btn" class="next-btn btn hide">Next</button>
+                </div>
+              </div>
         </div>
-        <div id="footer">
-            <p>If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" id="tribute-link">Wikipedia entry</a>.</p>
+        
+        
+    </div>
+    <div id="userout">
+        <div id="info">
+            <div id="dateout"></div>
+            <div id="userinfo"></div>
         </div>
     </div>
+    <div id="footer">
+    <button id="happy" class="btn">Happy!
+    </button>
+    </div>
+    
+
+    
     
 </body>
 </html>

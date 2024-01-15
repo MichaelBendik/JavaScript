@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(147, 152, 147);
+    font-size: 64pt;
+    
+}
+.out{
+    background-color: rgb(147, 152, 147);
+    font-size: 20pt;
+    
+}
+
+/*
+.container{
+    display: flex;
+}
+.item{
+    margin: 20pt;
+    border: 5pt solid black;
+}*/
